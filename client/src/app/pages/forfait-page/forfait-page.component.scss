@@ -6,11 +6,12 @@
 #banner {
     width: 100vw;
     height: 10vh;
-    background-color: orange;
+    // background-color: orange;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: x-large;
+    border-bottom: 2px solid black;
 }
 
 #forfaits-btn-list {
