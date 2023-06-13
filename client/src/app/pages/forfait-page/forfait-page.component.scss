@@ -1,0 +1,21 @@
+#main-container {
+    position: absolute;
+    top: 10vh;
+}
+
+#banner {
+    width: 100vw;
+    height: 10vh;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+#forfaits-btn-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
