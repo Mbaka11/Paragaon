@@ -149,3 +149,83 @@ h3 {
     text-align: center;
     padding-bottom: 30px;
 }
+
+.reasons-container {
+    display: grid;
+    grid-template-areas: 'reason1 reason2 reason3';
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.reason-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+}
+
+.reason-content {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+.pictures {
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas:
+        'pic1 pic1 pic1'
+        'pic2 pic3 pic4';
+    grid-template-columns: auto auto auto;
+    grid-template-rows: minmax(0, 0.4fr) minmax(0, 0.2fr);
+}
+
+.pictures #pic1 {
+    grid-area: pic1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pictures #pic2 {
+    grid-area: pic2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pictures #pic3 {
+    grid-area: pic3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pictures #pic4 {
+    grid-area: pic4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#photos-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+}
