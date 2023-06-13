@@ -14,6 +14,7 @@ import { MaterialPageComponent } from '@app/pages/material-page/material-page.co
 import { BottomBarComponent } from './components/bottom-bar/bottom-bar.component';
 import { HeadbarComponent } from './components/headbar/headbar.component';
 import { NosSallesPageComponent } from './pages/nos-salles-page/nos-salles-page.component';
+import { ForfaitPageComponent } from './pages/forfait-page/forfait-page.component';
 
 /**
  * Main module that is used in main.ts.
@@ -23,15 +24,24 @@ import { NosSallesPageComponent } from './pages/nos-salles-page/nos-salles-page.
  */
 @NgModule({
     declarations: [
+        
         AppComponent,
+       
         MainPageComponent,
+       
         MaterialPageComponent,
+       
         PlayAreaComponent,
+       
         SidebarComponent,
+       
         HeadbarComponent,
+       
         BottomBarComponent,
         InformationsPageComponent,
         NosSallesPageComponent,
+    ,
+        ForfaitPageComponent,
     ],
     imports: [AppMaterialModule, AppRoutingModule, BrowserAnimationsModule, BrowserModule, FormsModule, HttpClientModule],
     providers: [],
