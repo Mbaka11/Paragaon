@@ -13,6 +13,7 @@ import { MaterialPageComponent } from '@app/pages/material-page/material-page.co
 import { BottomBarComponent } from './components/bottom-bar/bottom-bar.component';
 import { HeadbarComponent } from './components/headbar/headbar.component';
 import { ForfaitPageComponent } from './pages/forfait-page/forfait-page.component';
+import { ForfaitOneComponent } from './components/forfait-one/forfait-one.component';
 
 /**
  * Main module that is used in main.ts.
@@ -30,6 +31,7 @@ import { ForfaitPageComponent } from './pages/forfait-page/forfait-page.componen
         HeadbarComponent,
         BottomBarComponent,
         ForfaitPageComponent,
+        ForfaitOneComponent,
     ],
     imports: [AppMaterialModule, AppRoutingModule, BrowserAnimationsModule, BrowserModule, FormsModule, HttpClientModule],
     providers: [],
