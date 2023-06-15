@@ -192,7 +192,8 @@ h3 {
         'pic1 pic1 pic1'
         'pic2 pic3 pic4';
     grid-template-columns: auto auto auto;
-    grid-template-rows: minmax(0, 0.4fr) minmax(0, 0.2fr);
+    grid-template-rows: 20em 13em;
+    margin-bottom: 30px;
 }
 
 .pictures #pic1 {
@@ -229,8 +230,4 @@ h3 {
     font-weight: 700;
     color: rgb(0, 0, 0);
     line-height: 1.2;
-}
-
-.testimonials {
-    margin-top: -230px;
 }
