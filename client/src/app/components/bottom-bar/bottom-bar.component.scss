@@ -40,8 +40,7 @@ p {
 #socials-container {
     grid-area: socials;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
 }
 
 #socials-container mat-icon {

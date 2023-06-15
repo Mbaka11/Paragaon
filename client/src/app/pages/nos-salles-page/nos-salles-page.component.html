@@ -1,0 +1,13 @@
+<app-headbar></app-headbar>
+<p id="gallery-title">
+    Bienvenue dans notre galerie de photos ! Découvrez nos 3 élégantes salles de réception, conçues pour accueillir des groupes de 40 à 600 personnes
+    en banquet. Nous avons tout ce qu'il faut pour rendre votre événement mémorable, que ce soit un mariage, des fiançailles, un anniversaire, un
+    banquet, une conférence, une réunion ou un événement d'entreprise. Parcourez nos images pour explorer les différentes salles et les superbes
+    décors que nous proposons. Laissez-vous inspirer par nos aménagements soigneusement conçus et envisagez les possibilités infinies pour créer
+    l'ambiance parfaite pour votre événement. N'hésitez pas à contacter notre équipe dévouée pour obtenir plus d'informations et réserver l'espace
+    idéal pour votre prochain événement.
+</p>
+<div id="gallery">
+    <img *ngFor="let imagePath of imagePaths" [src]="imagePath" />
+</div>
+<app-bottom-bar> </app-bottom-bar>

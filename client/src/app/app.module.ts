@@ -8,11 +8,12 @@ import { SidebarComponent } from '@app/components/sidebar/sidebar.component';
 import { AppRoutingModule } from '@app/modules/app-routing.module';
 import { AppMaterialModule } from '@app/modules/material.module';
 import { AppComponent } from '@app/pages/app/app.component';
+import { InformationsPageComponent } from '@app/pages/informations-page/informations-page.component';
 import { MainPageComponent } from '@app/pages/main-page/main-page.component';
 import { MaterialPageComponent } from '@app/pages/material-page/material-page.component';
 import { BottomBarComponent } from './components/bottom-bar/bottom-bar.component';
 import { HeadbarComponent } from './components/headbar/headbar.component';
-import { InformationsPageComponent } from './pages/app/informations-page/informations-page.component';
+import { NosSallesPageComponent } from './pages/nos-salles-page/nos-salles-page.component';
 
 /**
  * Main module that is used in main.ts.
@@ -30,6 +31,7 @@ import { InformationsPageComponent } from './pages/app/informations-page/informa
         HeadbarComponent,
         BottomBarComponent,
         InformationsPageComponent,
+        NosSallesPageComponent,
     ],
     imports: [AppMaterialModule, AppRoutingModule, BrowserAnimationsModule, BrowserModule, FormsModule, HttpClientModule],
     providers: [],
