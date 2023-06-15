@@ -10,8 +10,9 @@ import { AppMaterialModule } from '@app/modules/material.module';
 import { AppComponent } from '@app/pages/app/app.component';
 import { MainPageComponent } from '@app/pages/main-page/main-page.component';
 import { MaterialPageComponent } from '@app/pages/material-page/material-page.component';
-import { HeadbarComponent } from './components/headbar/headbar.component';
 import { BottomBarComponent } from './components/bottom-bar/bottom-bar.component';
+import { HeadbarComponent } from './components/headbar/headbar.component';
+import { InformationsPageComponent } from './pages/app/informations-page/informations-page.component';
 
 /**
  * Main module that is used in main.ts.
@@ -20,7 +21,16 @@ import { BottomBarComponent } from './components/bottom-bar/bottom-bar.component
  * Otherwise Angular Cli will not know in which module to put new component
  */
 @NgModule({
-    declarations: [AppComponent, MainPageComponent, MaterialPageComponent, PlayAreaComponent, SidebarComponent, HeadbarComponent, BottomBarComponent],
+    declarations: [
+        AppComponent,
+        MainPageComponent,
+        MaterialPageComponent,
+        PlayAreaComponent,
+        SidebarComponent,
+        HeadbarComponent,
+        BottomBarComponent,
+        InformationsPageComponent,
+    ],
     imports: [AppMaterialModule, AppRoutingModule, BrowserAnimationsModule, BrowserModule, FormsModule, HttpClientModule],
     providers: [],
     bootstrap: [AppComponent],
