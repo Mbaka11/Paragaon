@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./forfait-page.component.scss'],
 })
 export class ForfaitPageComponent {
-    isForfait1 = true;
-    isForfait2 = false;
+    isForfait1 = false;
+    isForfait2 = true;
     isForfait3 = false;
     isForfait4 = false;
 
