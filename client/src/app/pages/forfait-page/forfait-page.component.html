@@ -1,16 +1,19 @@
 <app-headbar></app-headbar>
-<div id="main-container">
-    <p id="banner">FORFAITS</p>
-    <div id="forfaits-btn-list">
-        <button mat-button (click)="changeForfait1()">Forfait 1</button>
-        <button mat-button (click)="changeForfait2()">Forfait 2</button>
-        <button mat-button (click)="changeForfait3()">Forfait 3</button>
-        <button mat-button (click)="changeForfait4()">Forfait 4</button>
+<div id="page-container">
+    <div id="main-container">
+        <p id="banner">FORFAITS</p>
+        <div id="forfaits-btn-list">
+            <button mat-button (click)="changeForfait1()">Forfait 1</button>
+            <button mat-button (click)="changeForfait2()">Forfait 2</button>
+            <button mat-button (click)="changeForfait3()">Forfait 3</button>
+            <button mat-button (click)="changeForfait4()">Forfait 4</button>
+        </div>
+        <div id="forfaits-list">
+            <app-forfait-one *ngIf="isForfait1"></app-forfait-one>
+            <p *ngIf="isForfait2">Forfait 2</p>
+            <p *ngIf="isForfait3">Forfait 3</p>
+            <p *ngIf="isForfait4">Forfait 4</p>
+        </div>
     </div>
-    <div id="forfaits-list">
-        <app-forfait-one *ngIf="isForfait1"></app-forfait-one>
-        <p *ngIf="isForfait2">Forfait 2</p>
-        <p *ngIf="isForfait3">Forfait 3</p>
-        <p *ngIf="isForfait4">Forfait 4</p>
-    </div>
+    <app-bottom-bar></app-bottom-bar>
 </div>
