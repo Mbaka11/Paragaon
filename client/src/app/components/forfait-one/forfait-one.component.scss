@@ -4,10 +4,10 @@
     display: grid;
     padding: 2% 15%;
     grid-template-areas:
-        'entry drinks '
-        'main-course drinks '
+        'entry additional '
+        'main-course additional'
         'main-course dessert'
-        'other additional'
+        'drinks other'
         'price price';
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 30px;
@@ -45,15 +45,20 @@
 .additionnal-item-container {
     display: flex;
     justify-content: space-between;
-    // padding-left: 10px;
+}
+
+.note-text {
+    font-size: 11px;
+    text-align: end;
+    font-style: italic;
 }
 
 h1,
-h2,
 p {
     margin-bottom: 0px;
+    font-family: 'Raleway', sans-serif;
 }
 
-// div#grid-container > div {
-//     margin-bottom: 2px;
-// }
+h1 {
+    font-weight: 550;
+}
