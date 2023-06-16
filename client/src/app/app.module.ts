@@ -17,6 +17,7 @@ import { HeadbarComponent } from './components/headbar/headbar.component';
 import { ForfaitPageComponent } from './pages/forfait-page/forfait-page.component';
 import { NosSallesPageComponent } from './pages/nos-salles-page/nos-salles-page.component';
 import { ForfaitTwoComponent } from './components/forfait-two/forfait-two.component';
+import { ForfaitThreeComponent } from './components/forfait-three/forfait-three.component';
 
 /**
  * Main module that is used in main.ts.
@@ -38,6 +39,7 @@ import { ForfaitTwoComponent } from './components/forfait-two/forfait-two.compon
         ForfaitPageComponent,
         ForfaitOneComponent,
         ForfaitTwoComponent,
+        ForfaitThreeComponent,
     ],
     imports: [AppMaterialModule, AppRoutingModule, BrowserAnimationsModule, BrowserModule, FormsModule, HttpClientModule],
     providers: [],

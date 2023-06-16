@@ -5,10 +5,10 @@
     display: grid;
     padding: 2% 15%;
     grid-template-areas:
-        'entry dessert'
+        'entry -'
+        'main-course dessert'
         'main-course other'
-        'main-course -'
-        'drinks additional'
+        'drinks none'
         'price price';
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 30px;
@@ -52,6 +52,11 @@
     font-size: 11px;
     text-align: end;
     font-style: italic;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
 }
 
 h1,
