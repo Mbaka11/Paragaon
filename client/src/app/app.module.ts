@@ -12,10 +12,10 @@ import { InformationsPageComponent } from '@app/pages/informations-page/informat
 import { MainPageComponent } from '@app/pages/main-page/main-page.component';
 import { MaterialPageComponent } from '@app/pages/material-page/material-page.component';
 import { BottomBarComponent } from './components/bottom-bar/bottom-bar.component';
-import { HeadbarComponent } from './components/headbar/headbar.component';
-import { NosSallesPageComponent } from './pages/nos-salles-page/nos-salles-page.component';
-import { ForfaitPageComponent } from './pages/forfait-page/forfait-page.component';
 import { ForfaitOneComponent } from './components/forfait-one/forfait-one.component';
+import { HeadbarComponent } from './components/headbar/headbar.component';
+import { ForfaitPageComponent } from './pages/forfait-page/forfait-page.component';
+import { NosSallesPageComponent } from './pages/nos-salles-page/nos-salles-page.component';
 
 /**
  * Main module that is used in main.ts.
@@ -25,23 +25,15 @@ import { ForfaitOneComponent } from './components/forfait-one/forfait-one.compon
  */
 @NgModule({
     declarations: [
-        
         AppComponent,
-       
         MainPageComponent,
-       
         MaterialPageComponent,
-       
         PlayAreaComponent,
-       
         SidebarComponent,
-       
         HeadbarComponent,
-       
         BottomBarComponent,
         InformationsPageComponent,
         NosSallesPageComponent,
-    ,
         ForfaitPageComponent,
         ForfaitOneComponent,
     ],
