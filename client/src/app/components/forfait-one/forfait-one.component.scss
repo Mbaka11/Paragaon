@@ -1,0 +1,59 @@
+#grid-container {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    padding: 2% 15%;
+    grid-template-areas:
+        'entry drinks '
+        'main-course drinks '
+        'main-course dessert'
+        'other additional'
+        'price price';
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 30px;
+}
+
+#entry {
+    grid-area: entry;
+}
+
+#main-course {
+    grid-area: main-course;
+}
+
+#drinks {
+    grid-area: drinks;
+}
+
+#dessert {
+    grid-area: dessert;
+}
+
+#other {
+    grid-area: other;
+}
+
+#additional {
+    grid-area: additional;
+}
+
+#price {
+    grid-area: price;
+    text-align: center;
+}
+
+.additionnal-item-container {
+    display: flex;
+    justify-content: space-between;
+    // padding-left: 10px;
+}
+
+h1,
+h2,
+p {
+    margin-bottom: 0px;
+}
+
+// div#grid-container > div {
+//     margin-bottom: 2px;
+// }
