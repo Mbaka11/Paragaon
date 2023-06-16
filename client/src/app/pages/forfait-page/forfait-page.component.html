@@ -8,7 +8,7 @@
         <button mat-button (click)="changeForfait4()">Forfait 4</button>
     </div>
     <div id="forfaits-list">
-        <p *ngIf="isForfait1">Forfait 1</p>
+        <app-forfait-one *ngIf="isForfait1"></app-forfait-one>
         <p *ngIf="isForfait2">Forfait 2</p>
         <p *ngIf="isForfait3">Forfait 3</p>
         <p *ngIf="isForfait4">Forfait 4</p>
