@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class ForfaitPageComponent {
     isForfait1 = false;
     isForfait2 = false;
-    isForfait3 = true;
-    isForfait4 = false;
+    isForfait3 = false;
+    isForfait4 = true;
 
     changeForfait1() {
         this.isForfait1 = true;
