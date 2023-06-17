@@ -1,0 +1,25 @@
+#page-container {
+    box-sizing: border-box;
+    position: relative;
+    top: 10vh;
+}
+#header {
+    box-sizing: border-box;
+    height: 50vh;
+    width: 100%;
+    background-image: url('../../../assets/images/salle/IMG_10.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px 100px;
+    filter: brightness(0.5);
+}
+
+#header-text {
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    font-size: 40px;
+    color: white;
+    height: 100%;
+}
