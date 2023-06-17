@@ -1,0 +1,31 @@
+#page-container {
+    box-sizing: border-box;
+    position: relative;
+    top: 10vh;
+    height: 100%;
+}
+#header {
+    box-sizing: border-box;
+    height: 50vh;
+    width: 100%;
+    background-image: url('../../../assets/images/salle/contact-header-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px 100px;
+}
+
+#header-phone {
+    display: flex;
+    align-items: center;
+}
+
+.header-text {
+    color: white;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.margin-bottom {
+    margin-bottom: 50px;
+}

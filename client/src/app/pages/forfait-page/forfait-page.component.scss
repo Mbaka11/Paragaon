@@ -1,0 +1,94 @@
+#banner {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Mukta';
+    background: white url('../../../assets/images/salle/IMG_6.jpeg') no-repeat fixed center;
+    margin-bottom: 2vh;
+}
+
+#text-container {
+    background-color: white;
+    width: 20vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#forfaits-btn-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-container {
+    position: relative;
+    top: 10vh;
+    height: 100vh;
+}
+
+#banner,
+#forfaits-btn-list {
+    animation: 1.5s anim-lineUp ease-out;
+}
+
+button {
+    --color1: #36486b;
+    --color2: #bccad6;
+    margin: 0 20px;
+    border-radius: 10px;
+    background-color: #667292;
+    width: 150px;
+    height: 50px;
+    font-size: 50px;
+    font-family: 'Mukta';
+    color: #bccad6;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    background: repeating-linear-gradient(45deg, var(--color1), var(--color1) 30px, var(--color2) 30px, var(--color2) 60px);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: 40s linear 0s infinite move;
+}
+
+button:hover {
+    border: none;
+    background-color: #8d9db6;
+    opacity: 1;
+    color: #36486b;
+    transition: 0.5s ease-in-out;
+    background: #8d9db6;
+}
+
+@keyframes move {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: 1000px;
+    }
+}
+
+.lineUp {
+    animation: 2s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
