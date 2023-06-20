@@ -1,0 +1,23 @@
+<app-headbar></app-headbar>
+<div id="page-container">
+    <div id="main-container">
+        <div id="banner">
+            <div id="text-container">
+                <p>FORFAITS</p>
+            </div>
+        </div>
+        <div id="forfaits-btn-list">
+            <button (click)="changeForfait1()">Forfait 1</button>
+            <button (click)="changeForfait2()">Forfait 2</button>
+            <button (click)="changeForfait3()">Forfait 3</button>
+            <button (click)="changeForfait4()">Forfait 4</button>
+        </div>
+        <div id="forfaits-list">
+            <app-forfait-one *ngIf="isForfait1" class="lineUp"></app-forfait-one>
+            <app-forfait-two *ngIf="isForfait2" class="lineUp"></app-forfait-two>
+            <app-forfait-three *ngIf="isForfait3" class="lineUp"></app-forfait-three>
+            <app-forfait-four *ngIf="isForfait4" class="lineUp"></app-forfait-four>
+        </div>
+    </div>
+    <app-bottom-bar></app-bottom-bar>
+</div>

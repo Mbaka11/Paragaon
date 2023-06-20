@@ -1,0 +1,85 @@
+.mat-toolbar {
+    background: #000000;
+    color: #fff;
+    display: grid;
+    grid-template-areas: 'logo routes socials';
+    grid-template-columns: minmax(0, 0.5fr) minmax(0, 1fr) minmax(0, 0.5fr);
+    height: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.logo-container {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+}
+
+.routes {
+    grid-area: routes;
+    display: flex;
+    justify-content: left;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.logo-container img {
+    min-width: 120px;
+    width: 60%;
+    height: 60%;
+}
+
+.routes a {
+    font-size: 16px;
+    --c: linear-gradient(#ffffff 0 0); /* update the color here */
+
+    padding-bottom: 0.01em;
+    background: var(--c), var(--c);
+    background-size: 0.3em 0.1em;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: 0.3s linear, background-size 0.3s 0.2s linear;
+}
+
+.routes a:hover {
+    cursor: pointer;
+    background-size: 40% 0.1em;
+    background-position: 10% 100%, 90% 100%;
+}
+
+#socials-container {
+    grid-area: socials;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#socials-container mat-icon {
+    margin-left: 16px;
+    color: #fff;
+    font-size: 24px;
+    transition: font-size 0.2s;
+}
+
+#facebook:hover mat-icon {
+    font-size: 30px;
+    color: #364fab;
+    cursor: pointer;
+}
+
+#instagram:hover mat-icon {
+    font-size: 30px;
+    color: #d739c2;
+    cursor: pointer;
+}
+
+#mail:hover mat-icon {
+    font-size: 30px;
+    color: #54b8ed;
+    cursor: pointer;
+}
