@@ -231,3 +231,37 @@ h3 {
     color: rgb(0, 0, 0);
     line-height: 1.2;
 }
+
+@media (max-width: 768px) {
+    .video-overlay h1,
+    .video-overlay h2 {
+        font-size: 1.2em;
+    }
+
+    .video-container {
+        margin-top: 70px;
+    }
+
+    button.learn-more .circle,
+    button.learn-more .icon {
+        display: none;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50%;
+    }
+
+    button.learn-more {
+        color: #090909;
+        padding: 1.8em 9em 1em 9em;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: rgba(232, 232, 232, 0.3);
+        border: 1px solid #e8e8e890;
+        transition: all 0.3s;
+        box-shadow: 6px 6px 12px #c5c5c58b, -6px -6px 12px #ffffff5e;
+    }
+}
