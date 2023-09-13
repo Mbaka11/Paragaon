@@ -41,6 +41,7 @@
 #price {
     grid-area: price;
     text-align: center;
+    align-items: center;
 }
 
 .additional-item-container {
@@ -54,9 +55,9 @@
     font-style: italic;
 }
 
-.flex-row {
+.flex-column {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 h1,
