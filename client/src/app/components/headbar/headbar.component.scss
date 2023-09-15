@@ -1,3 +1,5 @@
+$headbarBreakpoint: 1000px;
+
 .mat-toolbar {
     background: #000000;
     color: #fff;
@@ -10,6 +12,7 @@
     left: 0;
     right: 0;
     z-index: 9999;
+    align-items: center;
 }
 
 .logo-container {
@@ -82,4 +85,54 @@
     font-size: 30px;
     color: #54b8ed;
     cursor: pointer;
+}
+
+.burger-logo {
+    display: flex;
+    align-items: center;
+    justify-content: ce;
+}
+
+.burger {
+    padding: 0 10px;
+    display: none;
+    cursor: pointer;
+
+    mat-icon {
+        font-size: 30px;
+    }
+
+    @media (max-width: $headbarBreakpoint) {
+        display: block;
+    }
+}
+
+.routes-list {
+    @media (max-width: $headbarBreakpoint) {
+        display: none;
+
+        &.is-open {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            justify-content: flex-start;
+            max-width: 50%;
+            top: 100%;
+            background-color: #000000;
+            left: 0; /* Position it on the left */
+            width: 100%; /* Set the width to 100% */
+            border-bottom: solid 2px #ffffff;
+            border-right: solid 2px #ffffff;
+        }
+
+        a {
+            // border: solid 0.5px #fff;
+            font-size: 15px;
+        }
+
+        a:hover {
+            background-color: #7b7777;
+            color: #000000;
+        }
+    }
 }

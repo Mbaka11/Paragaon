@@ -232,6 +232,10 @@ h3 {
     line-height: 1.2;
 }
 
+.all-container {
+    max-width: 100%;
+}
+
 @media (max-width: 768px) {
     .video-overlay h1,
     .video-overlay h2 {
@@ -239,7 +243,7 @@ h3 {
     }
 
     .video-container {
-        margin-top: 70px;
+        margin-top: 15%;
     }
 
     button.learn-more .circle,
@@ -257,7 +261,7 @@ h3 {
     button.learn-more {
         color: #090909;
         padding: 1.8em 9em 1em 9em;
-        font-size: 18px;
+        font-size: 15px;
         border-radius: 0.5em;
         background: rgba(232, 232, 232, 0.3);
         border: 1px solid #e8e8e890;

@@ -1,16 +1,23 @@
 <mat-toolbar class="headbar" color="primary">
-    <div class="logo-container">
-        <a mat-button routerLink="/home">
-            <img src="../../../assets/images/Paragon_logo.jpeg" alt="Paragon" />
-        </a>
+    <div class="burger-logo">
+        <div class="burger" (click)="toggleHeadbar()">
+            <mat-icon>{{ isHeadbarOpen ? 'close' : 'menu' }}</mat-icon>
+        </div>
+        <div class="logo-container">
+            <a mat-button routerLink="/home">
+                <img src="../../../assets/images/Paragon_logo.jpeg" alt="Paragon" />
+            </a>
+        </div>
     </div>
 
     <div class="routes">
-        <a mat-button routerLink="/about">À propos</a>
-        <a mat-button routerLink="/forfaits">Forfaits</a>
-        <a mat-button routerLink="/salles">Nos Salles</a>
-        <a mat-button routerLink="/informations">Informations</a>
-        <a mat-button routerLink="/contact">Contact</a>
+        <div class="routes-list" [class.is-open]="isHeadbarOpen">
+            <a mat-button routerLink="/about">À propos</a>
+            <a mat-button routerLink="/forfaits">Forfaits</a>
+            <a mat-button routerLink="/salles">Nos Salles</a>
+            <a mat-button routerLink="/informations">Informations</a>
+            <a mat-button routerLink="/contact">Contact</a>
+        </div>
     </div>
 
     <div id="socials-container">

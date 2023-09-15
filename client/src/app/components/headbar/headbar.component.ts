@@ -7,4 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class HeadbarComponent {
     @Input() headbarMessage: string;
+
+    isHeadbarOpen = false;
+
+    toggleHeadbar(): void {
+        this.isHeadbarOpen = !this.isHeadbarOpen;
+    }
 }
