@@ -29,3 +29,9 @@
 .margin-bottom {
     margin-bottom: 50px;
 }
+
+@media (max-width: 768px) {
+    #header {
+        padding: 10% 10%;
+    }
+}
