@@ -76,3 +76,19 @@ p {
 h1 {
     font-weight: 550;
 }
+
+@media (max-width: 768px) {
+    #grid-container {
+        padding: 2% 4%;
+        height: 100%;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .note-text,
+    .note-text-h1 {
+        font-size: 9px;
+    }
+}
