@@ -58,7 +58,8 @@ button {
     animation: 40s linear 0s infinite move;
 }
 
-button:hover {
+button:hover,
+.btn-hover {
     border: none;
     background-color: #8d9db6;
     opacity: 1;

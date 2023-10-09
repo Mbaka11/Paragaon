@@ -7,10 +7,10 @@
             </div>
         </div>
         <div id="forfaits-btn-list">
-            <button (click)="changeForfait1()">Forfait 1</button>
-            <button (click)="changeForfait2()">Forfait 2</button>
-            <button (click)="changeForfait3()">Forfait 3</button>
-            <button (click)="changeForfait4()">Forfait 4</button>
+            <button id="btn-1" class="btn-hover" (click)="changeForfait1()">Forfait 1</button>
+            <button id="btn-2" (click)="changeForfait2()">Forfait 2</button>
+            <button id="btn-3" (click)="changeForfait3()">Forfait 3</button>
+            <button id="btn-4" (click)="changeForfait4()">Forfait 4</button>
         </div>
         <div id="forfaits-list">
             <app-forfait-one *ngIf="isForfait1" class="lineUp"></app-forfait-one>
